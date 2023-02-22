@@ -1,0 +1,5 @@
+1. Was ist eine Plattform: 
+	Eine Plattform beschreibt die Kombination aus Operating System und CPU. Diese verarbeiten die Computercommands.
+	
+2. Warum ist Java sowohl eine Plattform als auch eine Programmiersprache?
+	Java enthält eine eigene virtuelle Maschine welche den kompilierten Code an die entsprechende Plattform übergibt. Somit ist sie teil der Plattform.

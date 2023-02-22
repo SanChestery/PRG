@@ -1,0 +1,42 @@
+1. Unterschied zwischen C und Java:
+	Im Gegensatz zu C produziert der Java compiler nicht direkt Maschinencode sondern Code für die Java Virtual Machine. Diese verarbeitet den Bytecode anschliessend mit den entsprechenden Plattformen
+	
+2. Rolle und bedeutung der einzelnen JVM Komponenten:
+	BILD EINFÜGEN: https://www.guru99.com/java-virtual-machine-jvm.html
+	
+	1. ClassLoader: 
+		Subsystem zur Ladung von class files. 3 hauptfunktionen: Loading, Linking und Initialization
+		
+	2. Method Area
+		speichert metadaten, constant runtime pool und code für methoden der geladenen Klassen
+		
+	3. Heap
+		speichert Objekte, related instanzierte Variablen und Arrays. Ist geshared über mehrere Threats
+		
+	4. JVM language Stacks
+		speichert lokale variablen und resultate. Jeder thread hat einen einen eigenen jvm Stack (wird zusammen mit einem Thread erstellt). 
+		
+	5. PC Register
+		Speichert die adresse der Java Instruktion welche derzeit ausgeführt wird. Jeder thread hat ein eigenes Register
+		
+	6. Native Method Stacks 
+		Enthält die Native instruktionen -> Abhängig von native library. Ist in anderer Sprache als Java
+		
+	7. Exectuion Engine
+		Testet hardware, software oder complete systems. enthält keine Informationen über das getestete System
+		
+	8. Native Method Interface
+		ist ein programming framework. Erlaubt java code in einer JVM libraries und native applikationen zu callen
+		
+	9. Native Method Libraries
+		Ansammlung von Native Libraries (C & C++), wird von der Execution Engine benötigt
+	
+	Software Code Compilation & Execution Process: 
+		1. Editor: Code schreiben
+		2. Compiler: Code übersetzen in Native maschinen Code
+		3. Linker: kombiniert referenzierte program files
+		4. Loader: Lädt files von Hard Disk, Flash Drive, CD, ... ins RAM zur Ausführung, passiert automatisch bei ausführung des Codes
+		5. Execution: Code execution durch OS & Prozessor
+		
+	Unterschiede Java und C: 
+		C kompiliert seinen Code direkt während Java einen Prozess in der JVM durchläuft. Ausserdem verlinkt C seinen Code nicht auf bytecode ebenen
