@@ -1,0 +1,27 @@
+Array1: Guten Tag.
+
+Welchen Namen hat das Array bzw. wie wird das Array angesprochen:
+	Definiert wird das Array arr mit String [] arr = null; 
+	Um einen Wert einzufüllen kann arr = {Wert1, Wert2, Wert3}
+	Um ein array auszulesen verwendet man arr [INDEX] -> arr [1] ist gleichbedeutend mit Wert 2 (Arrays starten immer bei 0)
+	
+Welchen Wert hat das Attribut length des abgebildeten Arrays:
+	10 -> zählt lediglich wie viele Werte im Array enthalten sind. Wird mit arr.length aufgerufen
+	
+Welches ist der grösste Index-Wert des abgebildeten Arrays: 
+	9 (Array beginnt von 0 an zu zählen)
+
+Welchen Index-Wert hat das space-Zeichen?
+	5
+
+Schreiben Sie die Codezeile nieder, mit der der Punkt am Ende des Arrays durch ein Ausrufezeichen ersetzt wird
+	arr[9] = "!"; 
+	
+Wofür steht length?	Wie nennt man so etwas?
+	Man nennt es Attribut, da ein Array ein Objekt ist. Mit Length kann die Anzahl der Array Einträge ausgelesen werden. 
+	
+Könnte man die im Array enthaltenen Zeichen durch int-Werte bzw. durch double-Werte ersetzen? Falls nicht, wieso?
+	Man kann sie tauschen, allerdings werden sie dann als char eingelesen und nicht als eine der anderen Werte. Um werte als Double einzulesen müsste man das Array einlesen und in ein neues Array mit entsprechendem Typ einlesen.
+	
+Können Sie (anhand der obigen Abbildung) erklären, wieso Arrays strukturierte Typen sind?
+	Sie enthalten mehrere Daten mit immergleichen Typen in der immergleichen Struktur. Entsprechend sind sie strukturierte Typen. 
