@@ -1,0 +1,105 @@
+Teilaufgabe 1: 
+	Was ist unter einer Methode (Unterprogram, Operation) zu verstehen und wann ist es sinnvoll eine Methode zu definieren?
+		Wenn bestimmter Code mehrfach innerhalb des Programms verwendet werden soll.
+	
+	Sehen Sie sich die Methode main an und beantworten Sie die folgenden Fragen: 
+		Welche Modifiktation hat die Methode main und was ist die Bedeutung der einzelnen Modifikatoren?
+			public (öfftentliche Methode) static (dass man darauf zugreifen kann, ohne dass ein objekt davon instanziert wird)
+		
+		Von welchem Typ ist die Methode main?
+			void -> Kein Rückgabewert
+			
+		Wie sieht die Parameterliste der Methode main?
+			String[] args
+			
+	Sehen Sie sich die Methode sum an: 
+		public static double sum (double a, double b) {
+			return a + b; 
+		}
+	
+		Beantworten Sie folgende Fragen: 
+			Von welchem Typ ist die Methode sum
+				Double 
+				
+			Was kann zur Parameterliste der Methode sum gesagt werden?
+				double a & double b
+				
+			Anders als in der Methode main, taucht in der Methode sum ein return auf, wieso? Ist dies zwingend oder ist es eher "fakultativ"? Dürfte man es in der Methode sum auch weg lassen?
+				Es gibt sie Summe von a und b zurück und darf nicht weggelassen werden, weil es einen double rückgabe wert haben muss. In der Methodendefinition wird die Rückgabe eines Double werts bestimmt. Sonst müsste sie mit void anstelle von double geschrieben werden
+			
+			Wie könnte ein sinnvoller Aufruf von sum aussehen?
+				double summe = sum(20, 15); 
+				
+			Dürfte die Methode sum als Operand in einem Ausdruck vorkommen? -> Ja, sie kann mit den entsprechenden Parametern aufgerufen werden.
+			Und die Methode main? Nein
+			
+			
+Teilaufgabe 2: 
+	In einer Klasse ist es erlaubt, mehrere gleichnamige Methoden zu haben
+		Wie wird dies genannt?
+			Eine Methode überladen
+			
+		Wie werden die Methoden "auseinandergehalten" bzw. eindeutig identifiziert?
+			Durch die Signatur welche aus einer Kombination von Methodenname und Methodenparameter erstellt wird
+			
+		Was ist unter einer Signature einer Methode zu verstehen. 
+			Ihre Eindeutige (unique) zuweisung 
+			
+		Ist es erlaubt, in einer Klasse mehrere Methoden mit gleicher Signatur zu haben
+			Nein, da sie dann einfach die exakt gleiche methode wären
+			
+		Wozu dient die return-Anweisung in einer Methode? Gibt es Fälle, in denen die Verwendung dder return-Anweisung obligatorisch ist?
+			Sie dient dazu einen Wert zurück zu geben. Dies ist obligatorisch bei Methoden welche nicht vom Typ void sind und entsprechend eine Rückgabe verlanden. 
+			
+Teilaufgabe 3: 
+	Sehen Sie sich die folgende Klasse an: 
+		public class KlasseA {
+			public static void doIt() {
+				// Implementierung
+			}
+			
+			public static void doIt(int a) { 
+				// Implementierung
+				}
+				
+			public static void doIt(String message, int value) {
+				// Implementierung
+				}
+		}
+				
+		Ist die obige Klasse syntaktisch korrekt? -> Ja
+			Um welchen Typ von methoden handelt es sich dabei?
+				Um überladene Void methoden
+				
+			Wie sehen die Signaturen der einzelnen Methoden aus?
+				verschieden
+				
+Teilaufgabe 4: 
+	Folgende Klasse wurde von Ihrem Kollegen Hansli Pechvogel erstellt: 
+		public class HanslisKlasse {
+			public static void show() {
+				System.out.println("I'm Hansli!");
+			}
+			
+			public static void show(int a) {
+				System.out.println("Wert: " + a);
+			}
+			
+			public static void show(int res) {
+				System.out.println("Resultat: " + res);
+			}
+			
+			public static void show(String name, int alter) {
+				System.out.println(name + " ist " + alter + " Jahre alt!"); 
+			}
+		}
+		
+	Ist diese Klasse syntaktisch korrekt?
+		-> Ja sie ist korrekt, die einzelnen Methoden werden anhand der Attribute unterteilt und können auch so entsprechend zugewiesen werden. 
+		
+
+			
+			
+			
+			
+			

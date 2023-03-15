@@ -1,0 +1,38 @@
+Teilaufgabe 1: 
+	Sie haben auch gehört, dass bei den Methoden zwischen Klassenmethoden und Instanzmethoden (Objektmethoden) unterschieden wird. 
+		Woran erkennt man eine Klassenmethode?
+			an dem Keyword static
+		
+		Wie wird eine Klassenmethode (üblicherweise) aufgerufen?
+			Klassenname.Methodenname(MethodenArgumente);
+			
+		Sehen Sie sich die API-Dokumentation der Klasse java.lang.Math an. Was fällt Ihnen bei den Methoden dieser Klasse auf?
+			Es fehlt das static keyword
+			
+		Woran erkennt man eine Instanzmethode (Objektmethode)?
+			Sie werden ohne das Keyword static geschrieben und wirken nicht auf eine ganze Klasse sondern lediglich auf eine bestimmte Instanz einer Klasse
+			
+		Wie wird eine Instanzmethode aufgerufen?
+			Entweder mit instanzMethode(); oder this.instanzMethode(); 
+			
+		Die Methode main ist eine Klassenmethode dient als Einstiegspunkt in die Ausführung einer Java-Anwendung. Könnten Sie sich vorstellen, wieso diese Methode als Klassenmethode definiert wird. 
+			Weil die Methode auf die gesamte Klasse wirkt. 
+			
+Teilaufgabe 2: 
+	Welche Variablentypen kennen Sie?
+		Lokale Variable, Klassenvariable, Instanzvariable
+		
+	Was ist unter einem Block zu verstehen, wie wird ein Block "definiert" und welchen Einfluss hat ein Block auf die Sichtbarkeit und Lebensdauer von Variablen?
+		bezieht sich auf den Ort wo eine Variable deklariert wird. Eine Counter variable welche innerhalb eines for loops verwendet wird bis die Kondition erreicht wird, wird nur im for-loop block genutzt. Die Sichtbarkeit hierbei beschränkt sich auf den for-loop, die Lebensdauer endet mit dem loop. 
+		
+	Wie sieht es mit der Sichetbarkeit und Lebensdauer einer lokalen Variable aus? 
+		Sie ist sichtbar und "lebt" innerhalb ihres Blocks, jedoch nicht darüber hinaus. 
+		
+	Wie sieht es mit Sichtbarkeit und Lebensdauer einer Klassenvariable aus?
+		Sie ist verwendbar/sichtbar innerhalb einer Klasse und wenn die Klasse aufgerufen wird. Sie lebt entsprechend bis zum Ende der Klassenanwendung bzw. dem Programende
+		
+	Wie sieht es mit Sichtbarkeit und Lebensdauer einer Instanzvariable (Objektvariable) aus?
+		Sie ist in der ganzen Klasse mit ausnahme der Klassenmethoden sichtbar und existiert solange das Objekt existiert dem sie angehört. 
+		
+	Worin unterscheiden sich formale Parameter von "klassischen lokalen Variablen"?
+		Formale Parameter können methoden mitgegeben werden und entsprechend innerhalb von methoden verwendet werden die nicht lokal im block sind. 

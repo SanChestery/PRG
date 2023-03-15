@@ -1,0 +1,13 @@
+Was îst die wesentliche Eigenschaft eines "elementaren" Typs (auch "primitiver Typ" genannt)?
+	Sie sind atomar. Sie sind bereits auf den kleinst möglichen Wert und können entsprechend nicht weiter zerlegt werden. 
+
+Was charakterisiert einen strukturierten Typ?
+	Sie bestehen aus mehreren Komponenten, haben damit eine innere Struktur welche als logisches Ganzes einen Typ bilden
+
+Durch Verwendung von "strukturierten" Typen kann etwas erreicht werden, was mit "primitiven" Typen nicht erreicht werden kann. Was ist das?
+	Mit einem strukturierten Typ können viele Attribute als Teil eines Objekt logisch zusammenkommen.
+
+Wie wird ein s"strukturierter" Typ in Java markiert?
+	Mittels einer Klasse. (class)
+
+

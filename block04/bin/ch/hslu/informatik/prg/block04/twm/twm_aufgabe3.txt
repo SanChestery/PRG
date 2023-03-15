@@ -1,0 +1,39 @@
+Teilaufgabe 1: 
+	Was ist unter einer Klasse zu verstehen?
+		Es ist eine Art Bauplan welcher verwendet wird um Objekte zu erstellen. 
+	
+	
+	Mit welchem Schlüsselwort wird eine Klasse in Java definiert?
+		class
+	
+	Was ist unter "Instanz einer Klasse" zu verstehen?
+		Ein Objekt welches nach dem Bauplan einer Klasse erstellt wurde
+	
+	
+	Welcher Begriff wird als Synonym für "Instanz einer Klasse" gleichwertig verwendet?
+		Ein Objekt
+	
+	
+Teilaufgabe 2: 
+	Wie wird eine Instanz einer konkreten Klasse erstellt?
+		DATENTYP <REFERENZVARIABLENNAME> = new <KLASSENNAME>()	
+	
+	Was passiert bei der Erstellung der Instanz einer Klasse im Speicher?
+		Im Speicher wird Platz für die Daten in der Klasse reserviert und durch die Referenzvariable mit dem Objekt referenziert. 		
+	
+	Was ist unter einer "Referenzvariable" zu verstehen?
+		Sie ist die Referenzierung der Klasse auf den Speicher, eine Art Wegweiser	
+	
+	Sehen Sie sich das folgende Listing an: 
+		int startWert = 10; 
+		Raum raumA = new Raum(); 
+		
+		Worin unterscheiden Sie die zwei Variablen startWert und raumA bezüglich Typ und Inhalt?
+			startWert hat den Typ Integer während raumA den Typ Raum erhällt welcher erstellt wurde durch die Erstellung der Klasse, der Inhalt eines Ints  ist eine gerade Zahl, in raumA sind alle Variablen in diesem Objekt definiert. 
+		
+	Mit welchem Operator erfolgt der Zugriff auf eine Komponente eines Objekts?
+		. -> raumA.raumBezeichnung
+	
+	Nehmen wir an, dass Sie zwei, drei Instanzen einer Klasse erstellen. Was kann zur Struktur der erstellten Instanzen gesagt werden?
+		Die Struktur der Instanzen ist gleich
+	
