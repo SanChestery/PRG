@@ -1,0 +1,2 @@
+Was ist mit "Primitive values do not share state with other primitive values." gemeint?
+	Eine primitive Variable wird mit einem festen wert definiert, entsprechend  verändert sich dieser wert nicht. Allerdings könnte sie auch referenziert werden, dann könnte sie sich verändern
