@@ -1,0 +1,11 @@
+a. Wie sehen die Zustände der beiden Lampe-Instanzen nach deren Erstellung und Initialisierung aus?
+		Sie sind verschieden, da ihre Attribute verschiedene Werte enthalten.
+
+b. Sind die Zustände der beiden Lampe-Instanzen nach deren Erstellung und Initialisierung gleich oder unterschiedlich? Begründen Sie Ihre Antwort.
+	Die Zustände sind nicht gleich, da sie sich unterscheiden in den angegebenen Attributwerten
+
+c. Wie sieht es mit Verhalten der beiden Lampe-Instanzen aus? Verhalten sich die beiden LampeInstanzen gleich oder unterschiedlich? Woran ist dies zu erkennen?
+	Sie verhalten sich gleich, da sie dieselben Methoden verwenden
+
+d. Wir gehen davon aus, dass die beiden Lampen mit unterschiedlichen Schalter-Instanzen versehen wurden, womit wir auch zwei unterschiedliche Schalter-Instanzen haben. Wie sieht es mit Zuständen der beiden Schalter-Instanzen nach der Programmausführung2 aus? Gleich oder unterschiedlich?
+	Der Zustand kann unterschiedlich sein, das hängt davon ab ob die ein/aus Methoden verwendet wurden. 

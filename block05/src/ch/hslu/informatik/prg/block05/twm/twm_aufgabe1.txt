@@ -1,0 +1,14 @@
+Was sind die wesentlichen Eigenschaften der prozeduralen Programmierung?
+	prozedurale Programmieren beschreibt ein Programm welches sequentiell abläuft, also von Oben nach unten. Bei grösseren Programm werden sie sehr komplex und die generelle Interaktion und Wartung ist deutlich umständlicher, allerdings bieten sie ein paar Vorteile wenn es um die Geschwindigkeit geht
+	
+Was charakterisiert die objektorientierte Programmierung (OOP)?
+	In OOP wird primär mit Objekten und deren Eigenschaften gearbeitet und interagiert. -> der Code wird in seine Einzelheiten zerlegt und so modularisiert
+	
+Könnten Sie sagen, worin die Vorteile der OOP bestehen, wenn ein komplexes System entwickelt werden soll?
+	Einfachere Wartung, Code kann einfacher wiederverwendet werden, Unterstützung der Vererbung
+	
+	
+Analogie: 
+	A ist sehr komplex und schwierizg zu warten, ähnlich wie ein prozedurales Programm. B ermöglicht einfachen Austausch von alten/kaputten Teilen ähnlich wie die Objekt orientierte programmierung. 
+	
+	

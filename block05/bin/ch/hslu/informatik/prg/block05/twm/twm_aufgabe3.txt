@@ -1,0 +1,75 @@
+Was ist unter einem Konstruktor zu verstehen und was sind die wesentlichen Eigenschaften eines Konstruktors?
+	Ein Konstruktor ist eine Spezielle Methode welche definiert welche Attribute eines Objekts während der Instanzierung definiert werden, falls hier attribute deifniert werden, nennt man dies einen parametrisierten Konstruktor
+	Aufgerufen wird er durch this(PARAMETERLISTE);
+
+Kann eine Klasse auch mehrere Konstruktoren haben? Falls nicht, wieso? Falls ja, wie werden diese voneinander unterschieden?
+	Sie muss einen Konstruktor haben, falls keiner angegebn wird, wird der Java Standard Konstruktor verwendet
+
+Darf eine Klasse einen Konstruktor mit einer leeren Parameterliste haben? Falls nicht, wieso?
+	Ja darf sie, dann wird der Standardkonstruktor verwendet
+
+Darf eine Klasse Konstruktoren mit nicht leeren Parameterlisten enthalten? Falls nicht, wieso?
+	Ja darf sie, dann sprechen wir von parametrisierten Konstruktoren
+
+Wodurch ist der Zustand eines Objekts definiert? Und das Verhalten?
+	der Zustand eines Objekts wird mittels Attributen repräsentiert und kann durch Objektmethoden ausgelesen und verändert werden -> Verhalten
+
+Sind die Zustände von unterschiedlichen Instanzen einer Klasse gleich? Oder, können sie auch unterschiedlich sein? Falls ja, geben Sie ein Beispiel an, mit dem dies “veranschaulicht“ wird.
+	Die Zustände können gleich sein, sind es meist aber nicht. Der Wert eines Attributs wird einfach auf das Objekt angepasst -> der Buchtitel als Attribut ist bei jedem verschieden
+
+Wie kann sichergestellt werden, dass ein Objekt nach der Erstellung vollständig initialisiert wird und somit einen “sinnvollen“ Zustand hat?
+	Indem im Konstruktor alle Attribute als Parameter erwartet werden, somit muss ein Objekt mit allen Attributen instanziert werden. 
+
+Wie stellen Sie sicher, dass der Zustand eines Objekts geändert werden kann, obwohl ein direkter Zugriff auf seine Instanzvariablen (Felder) nicht erlaubt bzw. möglich ist?
+	Indem die Attribut Variablen als public definiert werden und eine setterMethode vorhanden ist.
+
+Im Unterricht war auch von den so genannten set- und get-Methoden die Rede.
+	Wozu dient eine get-Methode?
+		um ein Attribut einer Klasse auszulesen
+	
+	Wozu dient eine set-Methode?
+		Um ein Attribut einer Klasse zu setzen
+		
+	Die set- und get-Methoden werden i.d.R mit dem Modifikator public versehen. Wieso ist dies so und welcher Zusammenhang besteht zwischen Sichtbarkeit von Instanzvariablen und set-und get-Methoden?
+		Dies ist, damit sie zugänglich sind von überall, damit sie entsprechend gelesen oder verändert werden können, da meist die Felder als privat deklariert sind und sie damit ohne diese methoden nicht angesprochen werden können
+
+	Bei den set- und get-Methoden soll auf die Konvention für Namensgebung geachtet werden. Wie soll die Benennung von set- und get-Methoden erfolgen bzw. welche Regel sollen dabei eingehalten werden?
+		man beginnt immer mit set oder get und dann den Attributnamen -> setGroesse, getGroesse
+
+	Sehen Sie sich die folgende (sehr einfache) Klasse an und ergänzen Sie diese, indem Sie die setund get-Methoden für die beiden Instanzvariablen erstellen.
+		public boolean getClosed() {
+			return closed;
+		}
+		
+		public int getStartValue() {
+			return startValue;
+		}
+		
+		public void setClosed(boolean state) {
+			closed = state; 
+		}
+		
+		public void setStartValue(int value) {
+			startValue = value;
+		}
+		
+	Muss für jede Instanzvariable eine set- und get-Methoden zur Verfügung gestellt werden? Oder, könnten Sie sich einen Fall vorstellen, bei dem z.B. die set-Methode auch weggelassen werden könnte?
+		Theoretisch braucht es diese Methoden nicht zwingend, allerdings gilt es als Best-Practice diese immer mitzuschreiben
+	
+	In set-Methoden kommt sehr oft die Referenz this vor. Um was handelt es sich dabei und in welchen Fällen ist es zwingend, in der set-Methode die Referenz this zu verwenden?
+		this referenziert das aktuelle Objekt. Das bedeutet wenn eine lokale (Instanz)Variable geändert werden soll, sind sie zwingend notwendig
+	
+	Kennen Sie evtl. noch weitere Fälle, in denen mit der Referenz this gearbeitet werden muss?
+		Bei der Rückgabe des aktuellen Objekts am Ende einer Methode
+
+	Nehmen wir an, dass anschliessend drei Instanzen der Klasse Counter erstellt werden.
+		Wie oft kommt cnt im Speicher vor? Begründen Sie Ihre Antwort.
+			3 mal, je einmal pro Instanz -> sie sind private und entsprechend Lokal
+		
+		Wie oft kommt value im Speicher vor? Begründen Sie Ihre Antwort.
+			3 mal, je einmal pro Instanz -> sie sind private und entsprechend Lokal
+	
+	
+	Geben Sie abschliessend an, worin sich die Klassenvariablen und die Instanzvariablen (Objektvariablen) unterscheiden und worauf bei deren Nutzung zu achten ist.
+		Eine klassenvariable muss mit static deklariert werden, ist sie das nicht, handelt es sich um eine Objektvariable. 
+		Objektvariablen lassen sich ledgilich auf das aktuelle Objekt beziehen, während Klassenvariablen auch ohne eine Instanzierung ausgeführt werden können

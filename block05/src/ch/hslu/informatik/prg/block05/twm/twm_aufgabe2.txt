@@ -1,0 +1,104 @@
+
+Teilaufgabe 1: 
+	Welche Eigenschaften hat ein Fahrrad? Eine oder mehrere?
+		Rahmen, Pedale, Lenker, Lichter, ... -> mehrere
+		 
+	Welche von den Eigenschaften eines Fahrrads sind “relevant“ für die zu entwickelnde Applikation? (Hinweis: Welche Informationen zu einem Fahrrad möchten Sie als Kunde auf der Website des Vereins “Pro Velo Luzern“ sehen?)
+		Rahmengrösse, Gewicht des Velos, Reifendicke, Reifenart, ...
+		
+	Falls Sie mehrere Eigenschaften eines Fahrrads als “relevant“ sehen, wie kann man diese sinnvoll abbilden, da sie “zusammengehören“? Können diese als “primitiver“ (elementarer) Typ abgebildet	werden, oder muss dazu ein “strukturierter“ Typ verwendet werden?
+		Sie müssen als strukturierter Datentyp abgebildet werden, da sie verschieden sein können. 
+	
+	Weisen Sie jeder der zuvor gefunden “relevanten“ Eigenschafte einen geeigneten Datentyp, mit dem die möglichen Werte dieser Eigenschaft korrekt verwaltet werden können.
+		Rahmengrösse -> int/double, gewicht des Velos -> int, reifendicke -> int, reifenart -> int, ... 
+		Dies sind alles Attribute eines Objekts "Velo" 	
+		
+		
+Teilaufgabe 2: 
+	Inzwischen haben Sie alle “relevanten Eigenschaften“ und die passenden Datentypen bestimmen können, womit alle nötigen Informationen für die Erstellung eines Modells, dass ein reales Fahrrad passend abbildet, zur Verfügung stehen. Wie nennt man das Konstrukt in Java, mit dem ein solches Modell abgebildet werden kann?
+		Dieses Konstrukt nennt man eine Instanz einer Klasse, oder auch ein Objekt
+	
+	Bilden Sie das zuvor definierte Fahrrad-Modell in UML-Notation ab. Sollten Sie Mühe mit UML Notation haben, sehen Sie sich die Basics zu UML Notation auf tutorialspoint Website1 an. Stellen Sie sicher, dass die Tatsache, dass der direkte Zugriff auf die Eigenschaften des Fahrrad-Modells nicht erlaubt ist korrekt abgebildet wird (Tipp: Notation in UML).
+	
+		 _______________________
+		|		Velo			|
+		|_______________________|
+		|-groesseRahmen : int	|
+		|-gewichtVelo : int		|
+		|-markeVelo : String	|
+		|-reifenart : String	|	
+		|_______________________|
+	
+	Schreiben Sie anschliessend den nötigen Code in Java, mit dem das zuvor definierte Fahrrad-Modell syntaktisch korrekt abgebildet wird. Sorgen Sie dafür, dass die beiden Modell-Abbildungen (UML und Code) konsistent werden bzw. den gleichen Sachverhalt abbilden.
+	
+		package ch.hslu.informatik.prg.block04.twm;
+
+		public class Velo {
+			int groesseRahmen; 
+			int gewichtVelo; 
+			String markeVelo;
+			String reifenart; 
+			
+			// Getter Methoden
+			public static int getGroesseRahmen() {
+				return groesseRahmen; 
+			}
+			
+			public static int getGewichtVelo() {
+				return gewichtVelo; 
+			}
+			
+			public static String getMarkeVelo() {
+				return markeVelo; 
+			}
+			
+			public static String getReifenart() {
+				return reifenart; 
+			}
+			
+			// Setter Methoden
+			public static void setGroesseRahmen(int x) {
+				groesseRahmen = x; 
+			}
+			
+			public static void setGewichtVelo(int x) {
+				gewichtVelo = x; 
+			}
+			
+			public static String setMarkeVelo(String x) {
+				markeVelo = x; 
+			}
+			
+			public static String setReifenart(String x) {
+				reifenart = x; 
+			}
+			
+		}
+		
+		public class Velo {
+			public static void main(String[] args) {
+				
+				Velo velo1 = new Velo()
+				
+				velo1.setGroesseRahmen(10);
+				velo1.setGewichtVelo(15);
+				velo1.setMarkeVelo("Marke1");
+				velo1.setReifenart("Reifenart2");
+			}
+		}
+		
+Teilaufgabe 3: 
+	Ist es möglich, aus einer Klasse mehrere Instanzen dieser Klasse zu erstellen? Falls nicht, wieso?
+		Ja, das ist möglich.
+	
+	Wie kann aus einer Klasse ein Objekt (Instanz dieser Klasse) erstellt werden? Welcher Operator wird dazu verwendet und wie heisst das Konstrukt, das sich um die Erstellung des Objekts kümmert?
+		KLASSENNAME OBJEKTNAME = new KLASSENNAME(METHODEN); -> Scanner sc = new Scanner(System.in);
+	
+	Wenn ein Objekt erstellt wird, wird die Adresse, an der sich das Objekt im Speicher befindet in eine Variable gespeichert. Wie heisst eine solche Variable, die auf ein Objekt zeigt? Worin unterscheidet sich eine solche Variablen von einer Variable, in der ein “primitiver“ (elementarer) Datentyp verwaltet wird?
+		Das ist eine Objektvariable, sie ist eine Variable welche ein Attribut eines Objekts speichert, sie ist strukturiert und kann entsprechend verschieden definiert werden
+	
+	Im Unterricht wurde gezeigt, dass eine solche Variable auch mit null initialisiert werden kann
+		Null ist eine leere Variable, Das heisst, sie enthält nichts, sie "zeigt" auf kein Objekt. Der Wert darf nicht mit 0 ersetzt werden, da 0 einen Integer beschreibt. 
+		
+	Ihr Kollege Hansli Pechvogel behauptet, dass jede Klasse einen Datentyp darstellt. Stimmt das, oder hat Hansli etwas falsch verstanden?
+		das stimmt. 

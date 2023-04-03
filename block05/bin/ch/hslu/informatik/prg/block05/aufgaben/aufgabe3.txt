@@ -1,0 +1,9 @@
+Sehen Sie sich anschliessend die Methoden ein und aus an und beantworten Sie folgende Fragen.
+	Handelt es sich bei diesen Methoden um Instanz- oder Klassenmethoden?
+		Hierbei handelt es sich um Instanzmethoden, da sie sich direkt auf eine Instanz auswirken und nicht ohne eine Instanz ausgeführt werden können
+
+	Wenn es Instanzmethoden sind, hätte man sie auch als Klassenmethoden implementieren können?
+		Nein, da sie eine Instanz benötigen um deren Zustand zu ändern
+
+	Und auch umgekehrt? Begründen Sie Ihre Antwort.
+		Sie sind als Instanzmethoden implementiert. Auch, da ihnen das Keyword static fehlt. 
