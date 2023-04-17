@@ -1,0 +1,47 @@
+Teilaufgabe 1: 
+    Welche Klasse ist die direkte Oberklasse der Klasse Buch?
+        java.lang.Object
+
+    Wozu (Sinn und Zweck) wurde die Klasse Buch erstellt und in welcher Version ist sie aktuell?
+        "Diese Klasse bildet ein einfaches Buch ab." 
+        Version 1.0
+
+    Welche Instanzvariablen sind in der Klasse Buch enthalten und von welchem Typ sind diese?
+        int auflage
+        String autor
+        int buchNummer
+        int erscheinungJahr
+        String isbn
+        String titel
+
+    Sehen Sie sich die Angaben zu Konstruktoren an. Was kann an Hand von API Dokumentationen zu den Konstruktoren gesagt werden?
+        Es sind zwei Konstruktoren enthalten, einmal der leere Standard Konstruktor und einmal einer welcher alle Instanzvariablen instanziert
+
+    Sehen Sie sich die Methoden der Klasse Buch an:
+        Wieviele Methoden stehen zur Verfügung?
+            12
+
+        Sehen Sie evtl. auch Methoden, welche die Klasse Buch durch Vererbung "erhalten hat"? Falls ja, welche sind es?
+            11 methoden wurden von java.lang.Object erhalten (clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait)
+
+        Stellt die API Dokumentation alle nötigen Informationen zur Verfügung, die für einen sinnvollen Aufruf der jeweiligen Methode benötigt werden? Falls nicht, welche Informationen fehlen? Falls ja, welche sind es?
+            Die Dokumentation stellt alle nötigen informationen -> Aufruf, Konstruktor, Instanzvariablen, Methoden
+
+    Schreiben Sie den Code nieder, mit dem zwei Instanzen der Klasse Buch erstellt und vollständig initialisiert werden. Die beiden Instanzen sollten mit unterschiedlichen Konstruktoren erstellt werden. 
+    Schreiben Sie anschliessend auch den Code, mit dem der Titel, die ISBN und die Auflage eines Buches Ihrer Wahl ausgegeben werden kann
+
+        Setzen: 
+        Buch buch1 = new Buch(); 
+        buch1.setBuchNummer(10);
+        buch1.setIsbn(Nummer1245); 
+        buch1.setTitel(TitelHollywood);
+        buch1.setAutor(AutorHollywood);
+        buch1.setErscheinungJahr(1023); 
+        buch1.setAuflage(156);
+
+        Buch buch2 = new Buch(12, ISBNNUMMER13, HollyWoodTitel, HollyWoodAutor, 1999, 10)
+        
+        Auslesen: 
+        System.out.println("Buchtitel: " + buch2.getTitel() + " ISBN: " + buch2.getIsbn() + " Auflage: " + buch2.getAuflage); 
+
+
