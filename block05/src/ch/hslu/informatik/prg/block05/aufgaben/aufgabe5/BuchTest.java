@@ -36,8 +36,7 @@ public class BuchTest {
 
 		for(int i = 0; i < 3; i++) {
 			System.out.println(
-				"Buch " + (i + 1) + ":" + 
-				"\nBuchnummer: " + buchInstanzen[i][0] + 
+				"Buchnummer: " + buchInstanzen[i][0] + 
 				"\nTitel: " + buchInstanzen[i][1] + 
 				"\nAutor: " + buchInstanzen[i][2] + 
 				"\nErscheinungsjahr: " + buchInstanzen[i][3] + 

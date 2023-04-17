@@ -2,27 +2,30 @@ package ch.hslu.informatik.prg.block05.aufgaben.aufgabe5;
 
 public class Buch {
 	
+	private static int buchNummerCounter = 0;
 	private int buchNummer;
 	private String titel;
 	private String autor;
 	private int erscheinungJahr;
 	private int auflage;
 	
-	
-	public Buch() {
-	
+	// Standard Konstruktor
+	public Buch(int buchNummer) {
+		buchNummerCounter++; 
+		this.buchNummer = buchNummerCounter; 
 	}
-	
-	
+		
 	// Konstruktor
-	public Buch ( String titel, String autor, int erscheinungJahr, int auflage) {
+	public Buch (String titel, String autor, int erscheinungJahr, int auflage) {
+		buchNummerCounter++; 
+		this.buchNummer = buchNummerCounter; 
 		this.titel = titel;
 		this.autor = autor;
 		this.erscheinungJahr = erscheinungJahr;
 		this.auflage = auflage;
 	}
 	
-	// Setter & Getter Methoden
+	// Getter Methoden
 	public int getBuchNummer() {
 		return buchNummer; 
 	}
@@ -43,10 +46,8 @@ public class Buch {
 		return auflage; 
 	}
 
-	public void setBuchNummer(int nr) {
-		this.buchNummer = nr; 
-	}
 
+	/* Setter Methoden */
 	public void setTitel(String tit) {
 		this.titel = tit; 
 	}
