@@ -1,0 +1,10 @@
+Ihr Kollege Hansli Pechvogel hat eine Aufgabe zu lösen, in der die folgenden zwei Klassen auftauchen:
+Spieler und Verein. Er fragt sich:
+• Soll die Klasse Verein von der Klasse Spieler abgeleitet werden?
+• Oder, wäre es besser, die Klasse Spieler von der Klasse Verein abzuleiten?
+Er ist verunsichert und bietet Sie um Hilfe. Was sagen Sie ihm? Begründen Sie Ihre Antwort
+
+Antwort: 
+    Das hängt sehr von der Aufgabenstellung ab, in diesem Fall wäre es vermutlich am besten die Spieler vom Verein aus abzuleiten. 
+    Das würde es grundsätzlich sehr vereinfachen das Attribut zugehöriger Verein zu vereinheitlichen. Darin enthalten könnte grundsätzlich der Vereinsname, SpielerOrt, Lizenznummer und zugehörige Mannschaft als Attribute vererbt werden
+    
