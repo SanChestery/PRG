@@ -95,6 +95,9 @@ public class aufgabe7 {
 				}
 			}
 		}
+
+		// Schliessung Scanner
+		sc.close();
 	}
 
 }

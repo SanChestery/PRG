@@ -45,6 +45,9 @@ public class twm_aufgabe6 {
 		 * Mit allen Schleifen kann theoretisch das gleiche Ziel erreicht werden. Sie unterscheiden sich teils lediglich in Logik und Geschwindigkeiten
 		 */
 
+
+		// Schliessung Scanner
+		sc.close();
 	}
 
 }

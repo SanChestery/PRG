@@ -66,6 +66,9 @@ public class aufgabe2 {
 				System.out.print("Reheinfolge: " + a + " > " + c + " = " + b);
 			}  
 		}
+
+		// Schliessung Scanner
+		sc.close();
 	}
 
 }

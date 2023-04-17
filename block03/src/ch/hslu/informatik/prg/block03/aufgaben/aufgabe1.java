@@ -41,6 +41,10 @@ public class aufgabe1 {
 		
 		// Output
 		System.out.println("\nMit einem Kapital von " + startKapital + " CHF und einem Zinssatz von " + zinssatzInProzent + "% während " + jahre + " Jahren, ergibt dies ein Endkapital von: " + endKapital + " CHF");
+		
+		// Schliessung Scanner
+		sc.close();
+
 	}
 
 }

@@ -58,6 +58,8 @@ public class aufgabe5 {
 			System.out.println("Lugano");
 		}
 		
+		// Schliessung Scanner
+		sc.close();
 
 	}
 

@@ -15,8 +15,7 @@ public class Buch {
 	
 	
 	// Konstruktor
-	public Buch ( int buchNummer, String titel, String autor, int erscheinungJahr, int auflage) {
-		this.buchNummer = buchNummer;
+	public Buch ( String titel, String autor, int erscheinungJahr, int auflage) {
 		this.titel = titel;
 		this.autor = autor;
 		this.erscheinungJahr = erscheinungJahr;
@@ -42,5 +41,25 @@ public class Buch {
 	
 	public int getAuflage() {
 		return auflage; 
+	}
+
+	public void setBuchNummer(int nr) {
+		this.buchNummer = nr; 
+	}
+
+	public void setTitel(String tit) {
+		this.titel = tit; 
+	}
+
+	public void setAutor(String aut) {
+		this.autor = aut; 
+	}
+	
+	public void setErscheinungJahr(int jahr) {
+		this.erscheinungJahr = jahr; 
+	}
+
+	public void setAuflage(int auf) {
+		this.auflage = auf; 
 	}
 }

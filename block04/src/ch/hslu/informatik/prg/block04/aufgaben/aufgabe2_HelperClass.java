@@ -75,8 +75,6 @@ public class aufgabe2_HelperClass {
 		
 		int[] newArray = new int[length];
 		
-		int range = to - from + 1; 
-		
 		for (int i = 0; i < length; i++) {
 			
 			Random rand = new Random();
@@ -130,7 +128,7 @@ public class aufgabe2_HelperClass {
 		System.out.print("Bitte geben Sie eine Zahl ein: ");
 		Scanner sc = new Scanner(System.in);
 		int input = sc.nextInt();
-		 
+		sc.close();
 		return input; 
 	}
 	
@@ -148,7 +146,7 @@ public class aufgabe2_HelperClass {
 		System.out.print(message);
 		Scanner sc = new Scanner(System.in);
 		int input = sc.nextInt();
-		
+		sc.close();	
 		return input; 
 	
 

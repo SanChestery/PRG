@@ -36,5 +36,8 @@ public class twm_aufgabe4 {
 		} else {
 			System.out.println("Beide zahlen sind gleich");
 		}
+
+		// Schliessung Scanner
+		sc.close();
 	}	
 }

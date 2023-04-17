@@ -38,7 +38,9 @@ public class aufgabe3 {
 		
 		System.out.println("Your BMI is: " + bmi + " (" + description + ") ");
 		
-		
+
+		// Schliessung Scanner
+		sc.close();
 
 	}
 

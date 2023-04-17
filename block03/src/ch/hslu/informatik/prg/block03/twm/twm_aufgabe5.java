@@ -35,6 +35,9 @@ public class twm_aufgabe5 {
 		for (int j = number; j >= 0; j--) {
 			System.out.println(j);
 		}
+
+		// Schliessung Scanner
+		sc.close();
 	}
 
 }

@@ -33,6 +33,9 @@ public class aufgabe6 {
 			}
 		}
 
+		// Schliessung Scanner
+		sc.close();
+
 	}
 
 }

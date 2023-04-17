@@ -21,7 +21,7 @@ public class Aufgabe3 {
 		//Ausgabe 3
 		System.out.println(y + "%" + x + " = " + y % x);
 		
-		int a = 3, b = 8, c = 12, res = 4;
+		int a = 3, b = 8, /* c = 12, */ res = 4;
 		res += a * b; 
 		//Ausgabe 28
 		System.out.println("res: " + res);

@@ -20,6 +20,9 @@ public class aufgabe4 {
 		System.out.print("Bitte Untergrenze eingeben: ");
 		lower = sc.nextInt();
 
+		// Schliessung Scanner
+		sc.close();
+
 		// Output
 		System.out.println("Ausgabe: ");
 		for (; upper >= lower; upper--) {

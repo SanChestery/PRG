@@ -35,6 +35,9 @@ public class twm_aufgabe7 {
 			System.out.println("Aktueller Wert: " + zahl);
 			zahl--;
 		} while (zahl > 0);
+
+		// Schliessung Scanner
+		sc.close();
 	}
 
 }

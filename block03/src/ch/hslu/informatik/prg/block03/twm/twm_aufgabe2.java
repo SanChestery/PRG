@@ -1,7 +1,5 @@
 package ch.hslu.informatik.prg.block03.twm;
 
-import java.util.Arrays;
-
 public class twm_aufgabe2 {
 
 	public static void main(String[] args) {

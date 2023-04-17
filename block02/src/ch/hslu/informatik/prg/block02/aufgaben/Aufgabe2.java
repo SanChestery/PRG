@@ -25,6 +25,8 @@ public class Aufgabe2 {
 		double endKapital = startKapital * Math.pow((1 + zinssatz / 100) , anzahlJahre);
 		System.out.println("Endkapital: " + endKapital);
 		
+		/* Schliessung Scanner */
+		sc.close();
 	}
 
 }

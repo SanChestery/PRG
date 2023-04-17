@@ -8,7 +8,7 @@ public class twm_aufgabe2 {
         //zwei Variablen definieren
         int a = 5; 
         int b = 10;
-        String message = "Mal sehen ...";
+        /* String message = "Mal sehen ..."; */
 
         //Produkt berechnen
         int p = a * b;

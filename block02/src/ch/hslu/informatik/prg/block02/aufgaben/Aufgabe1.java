@@ -1,6 +1,5 @@
 package ch.hslu.informatik.prg.block02.aufgaben;
 
-import java.security.DrbgParameters.NextBytes;
 import java.util.Scanner; 
 
 public class Aufgabe1 {
@@ -48,6 +47,8 @@ public class Aufgabe1 {
 		//Ausgabe
 		System.out.println("Der Aufwand beträgt " + totalHours + " pro Stunde. Zu unserem aktuellen Maschinensatz von " + machineCostPerHour + " CHF/Std und unserem aktuellen Lohnsatz von " + loanPerHour + " CHF/Std kommen wir auf einen Gesamtbetrag von " + fixedCostsPerOrder + " CHF");
 		
+		// Schliessung Scanner
+		sc.close();
 		
 	}
 
