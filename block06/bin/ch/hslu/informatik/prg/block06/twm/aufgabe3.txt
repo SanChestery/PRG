@@ -1,0 +1,74 @@
+Sie haben gehört, dass eine Unterklasse “erweitert“ werden kann.
+
+    Was ist in diesem Kontext mit “Erweiterung“ gemeint?
+        Eine Erweiterung heisst, eine Subklasse übernimmt Attribute und Methoden von einer Superklasse und erweitert sie um weitere Methoden und Attribute
+    
+    Geben Sie ein einfaches Codebeispiel an, aus dem die Erweiterung der Unterklasse ersichtlich wird.
+        public class Vehicle {
+            public void start() {
+                // code to start the vehicle
+                System.out.println("Vehicle started.");
+            }
+        }
+
+        public class Car extends Vehicle {
+            public void drive() {
+                // code to drive the car
+                System.out.println("Car is driving.");
+            }
+        }
+
+        public class Main {
+            public static void main(String[] args) {
+                Car myCar = new Car();
+                myCar.start(); // Output: Vehicle started.
+                myCar.drive(); // Output: Car is driving.
+            }
+        }
+
+
+Sie haben gehört, dass in der Unterklasse eine Methode “überschrieben“ werden kann.
+
+    Was ist mit dem “Überschreiben“ gemeint?
+        Methoden welche von einer Superklasse kommen können verändert und so in einer Subklasse überschrieben werden. 
+
+    Muss eine Methode in der Unterklasse überschrieben werden?
+        Nein muss sie nicht
+
+        Falls nicht, was passiert, wenn sie auf einer Instanz der Unterklasse aufgerufen wird?
+            Dann wird die ursprüngliche Methode der Superklasse ausgeführt. 
+
+        Falls ja, wieso? Und, könnte man dies irgendwie verhindern?
+
+    Geben Sie ein einfaches Codebeispiel an, aus dem das “Überschreiben“ veranschaulicht wird.
+        class Animal {
+            public void makeSound() {
+                System.out.println("The animal makes a sound");
+            }
+        }
+
+        class Cat extends Animal {
+            @Override -> Nicht zwingend aber Best-Practice
+            public void makeSound() {
+                System.out.println("Meow");
+            }
+        }
+
+        public class Main {
+            public static void main(String[] args) {
+                Animal animal = new Animal();
+                Cat cat = new Cat();
+
+                animal.makeSound(); // output: The animal makes a sound
+                cat.makeSound(); // output: Meow
+            }
+        }
+
+
+Ist es erlaubt, in einer Klasse sowohl die Erweiterung als auch das Überschreiben (gleichzeitig) zu haben?
+    Ja das ist sogar der wahrscheinlichste Fall
+
+    Falls ja, welchen Nutzen bringt das mit sich?
+        Die Subklasse kann so bestmöglich auf ihren usecase spezifiziert werden.
+
+    Falls nein, wieso nicht?
