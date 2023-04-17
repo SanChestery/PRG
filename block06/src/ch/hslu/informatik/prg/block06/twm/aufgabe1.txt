@@ -1,0 +1,41 @@
+Beschreiben Sie in Ihren Worten, was unter Vererbung (im Kontext von OOP) zu verstehen ist.
+    Vererbung beschreibt das Erben von bestimmten Attributen/Eigenschaften von einer Superklasse zu einer Subklasse. Beispiel: Klasse Lichtschalter kann weitervererbt werden an bestimmte Lichtschalter firmen welche nur setzen bzw. auslesen möchten ob der Schalter an oder aus ist.
+    
+Welche Vorteile bringt die Vererbung mit sich?
+    Generelle Klassen welche immer wieder verwendet werden und somit öfters programmiert werden müssten können so einfacher zusammengefasst und zentral gemanaget werden
+
+Muss die Vererbung immer verwendet werden? Auch dann, wenn man z.B. zwei einfache Klassen wie Person und Adresse hat?
+    Nein, Wenn gutes Design herrscht muss eine Klasse nicht vererbt werden. 
+
+Was ist im Kontext der Vererbung mit einer “Oberklasse“ gemeint? Kennen Sie weitere Begriffe, welche die gleiche Bedeutung haben (Synonyme)?
+    Synonyme: Superklasse, Vater/Mutterklasse, Basisklasse
+    Eine Oberklasse vererbt ihre Attribute an eine Subklasse
+
+Was ist im Kontext der Vererbung mit einer “Unterklasse“ gemeint? Kennen Sie weitere Begriffe, die an Stelle von “Unterklasse“ synonym verwendet werden können?
+    Synonyme: Subklasse, Kindklasse
+    Eine Subklasse erbt bestimmte Attribute, Methoden und Eigenschaften von einer Superklasse
+
+Was kann im Kontext von Vererbung über die Klasse java.lang.Object gesagt werden?
+    Die Klasse java.lang.Object wird automatisch weitervererbt an alle Klassen, sie ist die Superklasse für die Klassen und gibt entsprechend ihre Methoden (hashCode oder toString) und Attribute mit
+
+Wie wird die Vererbung in UML Notation abgebildet? Geben Sie ein einfaches Beispiel mit zwei Klassen (als Skizze bzw. Diagramm), aus dem dies ersichtlich wird?
+    Die Subklasse hat einen Pfeil welche zur Superklasse zeigt
+
+Im Kontext von Vererbung wird ist oft auch von “Generalisierung“ und “Spezialisierung“ die Rede. Was ist damit gemeint? 
+Könnten Sie ein Beispiel aus dem realen Leben geben, mit dem die Generalisierung und Spezialisierung veranschaulicht werden kann.
+    Eine Generalisierung beschreibt die Zusammenfassung von Eigenschaften oder generelle Eigenschaften -> Superklasse, Eigenschaften die bei anderen Klassen gleich sind und gleich verwendet werden können
+    Spezialisierung wird verwendet in Subklassen um genauere Attribute zu erhalten und zu verwenden
+
+    EIn Beispiel aus dem realen Leben wären Fussballer als Generalisierung und Verteidiger als Spezialisierung.
+
+Mit welchem Schlüsselwort wird die Vererbung in Java angegeben?
+    Klasse SUB-KLASSENNAME extends SUPER-KLASSENNAME
+
+Es wird gesagt, dass eine Instanz der “Unterklasse“ mindestens so mächtig wie eine Instanze der “Oberklasse“ ist, in der Regel aber eher mächtiger. Was ist damit gemeint? Geben Sie ein Beispiel an, mit dem
+dies veranschaulicht werden kann.   
+    Eine Subklasse übernimmt die "Mächtigkeit" der Oberklasse anhand ihrer Attribute, Methoden und Möglichkeiten und erweitert diese um weitere Methoden und Attribute. Entsprechend ist sie mächtiger. 
+    Wenn ich einen Java Kurs anbiete und die Basics vermittle dann gebe ich Methoden und attribute mit, wenn nun ein Schüler dieses Wissen nimmt und ausprobiert kann er mehr lernen und weitere Methoden und Attribute hinzufügen
+
+Java unterstützt die “Mehrfachvererbung“ nicht. Was ist mit “Mehrfachvererbung“ gemeint? Und, heisst das, dass eine Klasse nur von einer Klasse abgeleitet werden darf?
+    Das bedeutet, dass eine Subklasse nur eine Superklasse haben kann (Eine Superklasse darf jedoch mehrere Subklassen haben)
+    So kann eine Subklasse nicht Methoden und Attribute aus mehreren Superklassen übernehmen sondern muss sich für eine entscheiden
