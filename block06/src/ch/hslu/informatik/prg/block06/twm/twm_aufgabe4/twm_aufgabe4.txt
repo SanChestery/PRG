@@ -1,0 +1,23 @@
+Teilaufgabe 1: 
+    Die Klasse ist korrekt implementiert, da sie den Standardkonstruktor verwenden. 
+
+    Ja dies ist möglich, jedoch macht es keinen Sinn da eine Instanz der Klasse B dieselben Zustände hätte wie die Klasse A. 
+
+    Die Klasse ist so nicht syntaktisch korrekt, da value nicht definiert wurde. 
+
+
+Teilaufgabe 2: 
+    Das eine Objekt ist vom Typ A und das andere vom Typ block05
+
+    Da beide Objekte keine initialisierung verlangen, sind ihre Zustände derzeit noch gleich
+
+    Bei beiden kann die setValue Funktion verwendet werden, um die Zustände anzupassen. 
+
+
+Teilaufgabe 3: 
+    Es fehlt die super() Anweisung in der Unterklasse, ausserdem werden bei beiden Klassen die Konstruktorbedingung nicht erfüllt und entsprechend können diese nicht initialisiert werden.
+
+    Die Zustände dieser beiden Objekte sind verschieden da sie bereits bei ihrer Initialisierung Attribute mitinitialisieren. 
+
+Teilaufgabe 4: 
+    Die Zustände sind gleich, da die Attribute der beiden Klassen gleich initialisiert wurden.
