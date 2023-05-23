@@ -1,0 +1,6 @@
+Teilaufgabe 1:
+    Alle Teile sind syntaktisch korrekt, können Studenten nicht als Personen gecastet werden und auch nicht umgekehrt.
+    --> Hierbei handelt es sich nur um semantische Fehler
+
+Teilaufgabe 2: 
+    Der Fehler der nicht vom Compiler gefunden wird ist im Teil 3 von Adrian zu Peter. 
