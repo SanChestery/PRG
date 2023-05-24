@@ -1,0 +1,18 @@
+Teilaufgabe 1: 
+    Polymorphie beischreibt eigentlich die vielseitigkeit eine Programms. Das verstärkt die dynamik eines Programs, Objekts oder nur von methoden
+
+    Polymorphie bringt die Vorteile kürzeren und übersichtlicheren Code, dynamischere Programme 
+
+    polymorphe Objekte/Klassen
+
+Teilaufgabe 2: 
+    Bei polymorphen Methoden wird eine Methode aus einer Oberklasse in einer Unterklasse überschrieben -> Die Signatur und entsprechend die parameter bleiben gleich und verändern sich nicht, ansonsten würde sie einfach erweitert werden. 
+
+    Überladene Methoden sind eigentlich immer polymorph, eine Ausnahme bildet hierbei lediglich eine Vererbte Methode, da diese ledliglich erweitert werden würde. 
+
+    Überschriebene Methoden sind immer polymorph, da eine Vererbte Methode überschrieben wird, währendem sich die Signatur nicht verändert. 
+
+    Statische Polymorphie beschreibt die Überladung von Methoden da bereits während der Kompilierung klar ist welche Methode / Konstruktor verwendet wird.
+    Dynamische Polymorphie beschreibt die Überschreibung von Methoden, da erst während der Laufzeit klar wird welche Methode / Konsturktor verwendet wird.  
+
+    Für ein Beispiel siehe twm_aufgabe 4
