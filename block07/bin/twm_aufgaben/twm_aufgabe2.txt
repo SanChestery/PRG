@@ -1,0 +1,13 @@
+Ein Polymorphes Objekt unterscheidet sich zu einem normalen Objekt darin, dass es von verschiedenen Vererbungshirarchien her instanziert werden kann und so zwar trotzdem gleich sein kann, jedoch auch komplett anders sein kann. 
+
+Vererbung muss gegeben sein um ein Polymorphes Objekt erzeugen zu können. 
+
+Statische Typen beziehen sich auf Datentypen welche bereits während der Kompilierzeit festgelegt wird, dynamische welche den tatsächlichen Typ eines Objekts während der Laufzeit darstellt. 
+    Beispiel: Person person = new Student(); 
+    --> Statisches Objekt: Person
+    --> Dynamisches Objekt: Student 
+
+Der istanceof Operator stellt fest, was der echte --> "dynamische" typ des Objekts ist. 
+    Beispiel: if (obj instanceof Student) { //do stuff }
+
+Ein Beispiel für ein Polymorphes Objekt aus dem Alltag wären fahrzeuge, Sie sind alle von verschiedenen typen aber trotzdem immernoch alle Fahrzeuge. 

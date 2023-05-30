@@ -1,0 +1,22 @@
+Teilaufgabe 1: 
+    Unter Polymorphen Klassen verstehe ich die möglichkeit von einer Klasse viele verschiedene Objekte zu instanzieren. 
+    In diesem Block werden polymorphe Klassen jedoch als Generische Klassen betitelt, welche es ermöglich eine Art Container Klasse darstellen, welche es ermöglichen die Instanzieren von Objekten zu vereinfachen und zu generalisieren
+
+    In einer generischen Klasse wird der Typ Parameter verwendet. Dieser ermöglicht die Verwendung von verschiedenen Typen und ermöglich so flexibilität. 
+
+    Bei der Erstellung einer Instanz einer polymorphen Klasse ist es wichtig, den richtigen Datentyp als Argument für den Typ-Parameter anzugeben. Der angegebene Typ bestimmt, wie die Klasse behandelt wird und welche Methoden und Eigenschaften verfügbar sind. Dadurch wird die Flexibilität und Typsicherheit der polymorphen Klasse gewährleistet.
+
+    Mit Generics möchte man aussagen, dass diese Klassen sehr generell und somit sehr vielfältig sind. 
+
+Teilaufgabe 2: 
+    anhand des Typ-Parameters <T>, anhand der deklaration T[] --> Array arbeitet mit dem generischen Typ T, verwendung von generischem Typ T in Methoden
+
+    Es wird als generischer Typ Operator bezeichnet. 
+
+    In dieser Codezeile wird ein neues Array vom Typ "Object" mit der angegebenen maximalen Kapazität erstellt. Anschließend wird das Array mit dem generischen Typ "T" gecastet, um es zu einem Array des generischen Typs zu machen, der in der Klasse angegeben ist.
+
+    SimpleGenericList<LocalDate> datumListe = new SimpleGenericList<>(10);
+
+    SimpleGenericList<String> textListe = new SimpleGenericList<>(10);
+
+    Ja dies wäre möglich wenn man beispielsweise bei der Instanzierung den Typ von <LocalDate> zu <String> ändern würde. 
