@@ -1,0 +1,12 @@
+Teilaufgabe 1: 
+    Sie enthält den Zugriffsmodifikator public und ist somit öffentlich zugänglich. 
+
+    Nein es nicht möglich direkt auf diese beiden Referenzvariablen zuzugreifen, da sie als private deklariert werden. Jedoch kann über verschiedene Methoden darauf zugegriffen werden.
+
+    Eine explizite Get Methode würde hierbei das gesamte Array ausgeben, diese gibt es nicht. jedoch gibt es eine Methode welche ein spezifisches Objekt im Array ausgibt und eine weitere um ein spezifisches Objekt zu entfernen. 
+
+    Es macht keinen Sinn die Grösse des Arrays spezifisch zu setzen, da so "leere" Elemente im Array erstellt würden. Dies würde das Programm ineffizient machen. 
+
+
+Teilaufgabe 2: 
+    
