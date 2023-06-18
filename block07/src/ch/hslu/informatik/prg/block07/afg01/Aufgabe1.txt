@@ -1,0 +1,25 @@
+1. Diese Klasse wurde als Basisklasse genommen, da sie bereits am generischsten ist. 
+
+2. Hierbei handelt es sich um eine Abstrakte Klasse, also eine Klasse, welche sich nicht instanziieren lässt. Dies wurde so gewählt, dass es keinen Reinen Übersetzer gibt, sondern, dass immer spezifische Übersetzer implementiert werden müssen. 
+
+3. Überschreiben von methoden finden wir in den spezifischen Übersetzer Klassen, diese überschreiben die Methoden der abstrakten Klasse. Ausserdem finden wir in der Klasse Person einen Überladenen Konstruktor
+
+4. Syntaktisch wäre das korrekt, allerdings macht es semantisch keinen Sinn. Die Ausgabe würde einfach die Methode uebersetze von der Supermethode verwenden. 
+
+5.a. Damit die Iteration funktioniert, andernfalls würde sie das nicht. 
+5b. Die Iteration würde funktionieren, allerdings nur wenn anschliessen vor der Methode ubersetze der Typ auf Uebersetzer gecastet werden würde.
+5c. Die Iteration würde nicht funktionieren, da ein falscher Typ verwendet würde.
+
+6. Dies sind Konstanten. Sie können direkt abgerufen werden und können nicht verändert werden. Es finden sich noch weitere in der Klasse Teilnehmer. 
+
+7. Nein
+
+8. Der grund hierfür liegt im Sichtbarkeitsoperator des jeweiligen Attributs. Es gibt mehrere private Variablen. Diese können nur über eine get Methode ausgelesen werden. Auch können Attribute nur erreicht werden, wenn die get Methoden nicht private sind. 
+
+9. Ja
+
+10. In kürze, das Array merkt es ist voll, erstellt ein grösseres Temporäres Array. Kopiert sich selbst + den neuen Eintrag und vergrössert sich so. 
+
+11. Alle Attribute müssten noch implementiert werden.
+
+12. Nein. Aber es würde definitiv Sinn machen, alle Klassen welche von der person ausgehen in ein eigenes Package zu tun. Auch muss hierbei auf die implementierung der Methoden geachtet werden. 
