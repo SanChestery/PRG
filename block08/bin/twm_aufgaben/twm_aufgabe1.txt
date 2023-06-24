@@ -1,0 +1,17 @@
+Teilaufgabe 1: 
+    Eine Spezifikation beschreibt eine Anforderung an eine Applikation -> was muss die Software können?
+
+    Sobald eine Spezifikation spezifiziert wurde, kann mit der Implementierung begonnen werden
+
+    Die Implementierung findet basierend auf der Spezifikation statt. So können beide besser geplant und einfacher umgesetzt werden. 
+
+    Bevor ich ein Haus baue, definiere ich zuerst einen Plan wie das Haus gebaut werden soll
+
+Teilaufgabe 2: 
+    Eine Spezifikation in Java beschreibt eine Schnittstelle. Hierbei kann eine Software aus der Sicht eines Nutzers beschrieben werden. Spezifisch werden hierfür statt Klassen Interfaces verwendet. 
+
+    Eine Implementierung einer Spezifikation wird durch eine Klasse umgesetzt
+
+    Ja es sind mehrere Implementierung der gleichen Spezifikation möglich. Genau wie ich beim Hausbau auch denselben Plan mehrfach benutzen kann. 
+
+    Die Software wird modularer und kann einfach gewartet und verändert werden. Ausserdem kann über Interfaces sehr schnell und einfach die Requirements bestimmt werden.

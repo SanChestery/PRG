@@ -1,0 +1,20 @@
+Teilaufgabe 1: 
+    interface 
+
+    static & default-Methoden
+
+    Ja ein Interface kann von einem anderen Interface abgeleitet werden. Durch das keyword extends
+
+    public interface A {
+        void a();
+    } 
+
+    public class B implements A {
+        @Override
+        public void a() {
+            System.out.println("Work");
+        }
+    }
+
+Teilaufgabe 2: 
+    
